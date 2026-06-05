@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joni Crewing | Maritime Recruitment</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f4f7fc;
+            color: #1e2a3a;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
+        }
+        header {
+            background: #0b3b5f;
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .flex-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .logo-svg {
+            width: 50px;
+            height: 50px;
+        }
+        .company-name h1 {
+            font-size: 1.8rem;
+        }
+        .company-name p {
+            font-size: 0.8rem;
+            color: #aad0f5;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        nav a:hover {
+            color: #ffb347;
+        }
+        .btn {
+            display: inline-block;
+            background: #ff8c00;
+            color: white;
+            padding: 0.6rem 1.2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .btn-outline {
+            background: transparent;
+            border: 2px solid #ff8c00;
+            color: #ff8c00;
+        }
+        .hero {
+            background: linear-gradient(rgba(0,40,70,0.8), rgba(0,40,70,0.8)), url('https://placehold.co/1600x600/2c3e50/ffffff?text=Joni+Crewing') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 4rem 1rem;
+        }
+        .hero h2 {
+            font-size: 2.5rem;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin: 2rem 0;
+            color: #0b3b5f;
+        }
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        }
+        .job-meta {
+            color: #ff8c00;
+            font-weight: bold;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        footer {
+            background: #0b3b5f;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #25D366;
+            color: white;
+            border-radius: 50px;
+            padding: 10px 20px;
+display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        @media (max-width: 768px) {
+            .flex-nav {
+                flex-direction: column;
+            }
+            .hero h2 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container flex-nav">
+        <div class="logo-area">
+            <div class="logo-svg">
+                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M50 25 L50 70 M35 50 L50 70 L65 50 M50 70 L50 85 M42 85 L58 85" stroke="#FF8C00" stroke-width="4" stroke-linecap="round"/>
+                    <circle cx="50" cy="85" r="4" fill="#FF8C00"/>
+                    <path d="M22 35 L78 35 L72 25 L28 25 L22 35Z" fill="#FF8C00" stroke="#FFFFFF" stroke-width="2"/>
+                    <rect x="46" y="16" width="8" height="9" fill="#FFFFFF" rx="1.5"/>
+                </svg>
+            </div>
+            <div class="company-name">
+                <h1>JONI CREWING</h1>
+                <p>Yohannes Deneke – Managing Director</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#jobs">Jobs</a></li>
+                <li><a href="#candidates">Candidates</a></li>
+                <li><a href="#employers">Employers</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Seafarer Recruitment Done Right</h2>
+            <p>Joni Crewing, founded by Yohannes Deneke, connects skilled seafarers with reputable shipping companies worldwide.</p>
+            <a href="#jobs" class="btn">View Jobs</a>
+            <a href="#candidates" class="btn btn-outline">Register as Crew</a>
+        </div>
+    </section>
+
+    <section id="jobs">
+        <div class="container">
+            <h2 class="section-title">Current Vacancies</h2>
+            <div class="grid-3">
+                <div class="card job-card">
+                    <h3>Master / Captain</h3>
+                    <div class="job-meta">Container / Bulk | ASAP</div>
+                    <p>Valid COC, 2+ years command experience.</p>
+                    <a href="#contact" class="btn">Apply</a>
+                </div>
+                <div class="card job-card">
+                    <h3>Chief Engineer</h3>
+                    <div class="job-meta">Oil/Chemical tanker | Urgent</div>
+                    <p>ME experience, management skills.</p>
+                    <a href="#contact" class="btn">Apply</a>
+                </div>
+                <div class="card job-card">
+                    <h3>Able Seaman (AB)</h3>
+                    <div class="job-meta">Offshore / PSV | Immediate</div>
+                    <p>2+ years sea service, valid STCW.</p>
+                    <a href="#contact" class="btn">Apply</a>
+                </div>
+                <div class="card job-card">
+                    <h3>Oiler / Motorman</h3>
+                    <div class="job-meta">Heavy lift / Tanker</div>
+                    <p>Engine room watchkeeping experience.</p>
+                    <a href="#contact" class="btn">Apply</a>
+                </div>
+                <div class="card job-card">
+                    <h3>Chief Cook</h3>
+                    <div class="job-meta">Crew vessel / Dredger</div>
+                    <p>HACCP certified, provision management.</p>
+                    <a href="#contact" class="btn">Apply</a>
+                </div>
+                <div class="card job-card">
+                    <h3>2nd / 3rd Officer</h3>
+                    <div class="job-meta">General cargo / Coaster</div>
+                    <p>ECDIS, GMDSS, ARPA certified.</p>
+                    <a href="#contact" class="btn">Apply</a>
+                </div>
+            </div>
+        </div>
+    </section>
+<a href="#home" style="color:#ffc285;">Home</a>
+            <a href="#jobs" style="color:#ffc285;">Jobs</a>
+            <a href="#candidates" style="color:#ffc285;">Candidates</a>
+            <a href="#employers" style="color:#ffc285;">Employers</a>
+            <a href="#contact" style="color:#ffc285;">Contact</a>
+        </div>
+        <p>© 2025 Joni Crewing – Maritime Recruitment Agency. Founded by Yohannes Deneke.</p>
+    </div>
+</footer>
+
+<a href="https://wa.me/971502512269?text=Hello%20Joni%20Crewing" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp" style="font-size: 1.4rem;"></i> Chat with us
+</a>
+<!-- Font Awesome for WhatsApp icon -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</body>
+</html>
